@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1>Plant app</h1>
       <nav>
         <Link to="/">Home</Link> <br />

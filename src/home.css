@@ -1,0 +1,13 @@
+.plants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.plantcards {
+    margin: 5px auto;
+}
+.plantimg {
+    width: 250px;
+    height: 250px;
+    object-fit: cover
+}
