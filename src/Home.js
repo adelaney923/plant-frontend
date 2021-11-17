@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import './home.css'
 
 const Home = () => {
@@ -11,6 +11,10 @@ const Home = () => {
           .then((res) => res.json())
           .then((data) => setPlantData(data.plants));
     }, [])
+
+    const handleDelete = () => {
+        console.log('bye')
+    }
 
     const plants = plantData.map((plant) => {
         return (
@@ -29,6 +33,7 @@ const Home = () => {
                   <h4>{plant.plantType}</h4>
                   <p>Needs Water: {plant.needsWater.toString()}</p>
                 </Card.Text>
+                <Button onClick={handleDelete}>This plant has died</Button>
               </Card.Body>
             </Card>
           </div>
