@@ -27,6 +27,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <h4>{plant.plantType}</h4>
+                  <p>Needs Water: {plant.needsWater.toString()}</p>
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -3,22 +3,30 @@ import {Navigate} from 'react-router-dom'
 
 
 const PlantForm = () => {
-    const [plant, setPlant] = useState({plantName: '', plantType: '', imageUrl: ''})
+    const [plant, setPlant] = useState({plantName: '', plantType: '', imageUrl: '', needsWater: ''})
     const [redirect, setRedirect] = useState(false)
 
     const handleChange = (event) => {
       const value = event.target.value;
       const name = event.target.name;
+      const checked = event.target.checked
       //make a copy of current state
       const copy = Object.assign({}, plant);
       //update 1 of that copys prperties
-      copy[name] = value;
+      if (name === 'needsWater') {
+          copy[name] = checked
+      }
+      else {
+      copy[name] = value
+      }
+    //   copy[needsWater] = checked
       //save copy as new state
       setPlant(copy);
     };
 
     const handleSubmit = (event) => {
       event.preventDefault();
+      console.log(event)
       console.log("submitted");
       fetch("http://localhost:4000/plants", {
         method: "POST",
@@ -56,6 +64,7 @@ const PlantForm = () => {
             name="imageUrl"
             value={plant.imageUrl}
           />
+          <input type="checkbox" name="needsWater" onChange={handleChange}/>
           <button type="submit">Save</button>
         </form>
       </div>
