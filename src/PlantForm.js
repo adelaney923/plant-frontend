@@ -50,18 +50,21 @@ const PlantForm = () => {
             onChange={handleChange}
             type="text"
             name="plantName"
+            placeholder="Plant Name"
             value={plant.plantName}
           />
           <input
             onChange={handleChange}
             type="text"
             name="plantType"
+            placeholder="Plant Type"
             value={plant.plantType}
           />
           <input
             onChange={handleChange}
             type="text"
             name="imageUrl"
+            placeholder="Plant URL"
             value={plant.imageUrl}
           />
           <input type="checkbox" name="needsWater" onChange={handleChange}/>
