@@ -16,7 +16,7 @@ nav Link{
 header{
   display: flex;
   justify-content: space-around;
-  background: hsla(0, 100%, 90%, 0.3);
+  background: white;
   color: black;
 }
 
@@ -34,13 +34,20 @@ nav{
 
 .plantForm{
   border: 1px solid black;
-  width: 400px;
+  width: 600px;
   height: 80px;
   margin: 0 auto;
   padding: 20px;
+  background: white;
 }
 
 input {
   height: 30px;
   width: 100px;
+}
+
+.waterCheck {
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
 }

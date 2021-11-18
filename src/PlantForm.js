@@ -68,7 +68,8 @@ const PlantForm = () => {
               placeholder="Plant URL"
               value={plant.imageUrl}
             />
-            <input type="checkbox" name="needsWater" onChange={handleChange}/>
+            <div className="waterCheck"></div>
+            <span>Needs Water?</span><input className="waterCheck" type="checkbox" name="needsWater" onChange={handleChange}/>
             <button type="submit">Save</button>
           </form>
         </div>
