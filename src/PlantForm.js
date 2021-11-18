@@ -3,7 +3,7 @@ import {Navigate} from 'react-router-dom'
 
 
 const PlantForm = () => {
-    const [plant, setPlant] = useState({plantName: '', plantType: '', imageUrl: '', needsWater: ''})
+    const [plant, setPlant] = useState({plantName: '', plantType: '', imageUrl: '', needsWater: false})
     const [redirect, setRedirect] = useState(false)
 
     const handleChange = (event) => {
