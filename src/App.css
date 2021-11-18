@@ -5,13 +5,36 @@ nav Link{
 .App {
   text-align: center;
   color: black;
-  background-image: linear-gradient(#ffffff, #d1e7dd);
+  background-image: url('https://www.jacksonandperkins.com/images/xxl/27677.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
   min-height: 100vh;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  background: hsla(0, 100%, 90%, 0.3);
+  color: black;
+}
+
+.title{
+  color: green;
+}
+
+a:visited {
+  color: black;
+}
+
+nav{
+  display: inline;
 }
 
 .plantForm{
   border: 1px solid black;
-  width: 600px;
+  width: 400px;
   height: 80px;
   margin: 0 auto;
   padding: 20px;
@@ -19,4 +42,5 @@ nav Link{
 
 input {
   height: 30px;
+  width: 100px;
 }
