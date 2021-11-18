@@ -6,8 +6,8 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Plant app</h1>
+    <div className="App">
+      <h1>Plant App</h1>
       <nav>
         <Link to="/">Home</Link> <br />
         <Link to="/add-plants">Add Plants</Link>

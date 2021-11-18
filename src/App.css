@@ -1,3 +1,22 @@
 nav Link{
   text-decoration: none;
 }
+
+.App {
+  text-align: center;
+  color: black;
+  background-image: linear-gradient(#ffffff, #d1e7dd);
+  min-height: 100vh;
+}
+
+.plantForm{
+  border: 1px solid black;
+  width: 600px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input {
+  height: 30px;
+}
